@@ -1,0 +1,23 @@
+//
+2.
+ Hàm này không trả về giá trị nào vì không có điểm dừng nó lặp vô hạn hay là thiếu base case làm lỗi chương trình
+
+ //
+ 3.
+ chương trình không trả về giá trị gì vì lí do nó không phải 1 hàm đệ quy do hàm return lại gọi lại chính nó
+
+ //
+ 4.
+ hàm không chạy lỗi biên dịch do N quá lớn dẫn đến tràn bộ nhớ đệ quy quá sâu
+
+ //
+ 5.
+ bài toán này dùng đệ quy là không hợp lí nên dùng vòng lặp vì do đệ quy tính toán quá nhiều làm thất thoát bộ nhớ dẫn đến thời gian chạy tốn nhiều
+
+ //
+ 6.
+  long tich(int n) {
+  if(n == 0) return 1;
+  return n*tich(n-1);
+  }
+  Tràn bộ nhớ khi mà n > 33
